@@ -2,6 +2,7 @@
 import sys
 import time
 
+# pengulangan untuk pemilihan operasi dan menu keluar
 x = "curut"
 while x == "curut":
     # pilihan operasi
@@ -29,7 +30,7 @@ while x == "curut":
 
     # print hasil operasi
     print(f"{operator} dari {number1} dan {number2} adalah {res}")
-    # input pemelihan user keluar
+    # input pemelihan menu keluar
     keluar = str(input("apakah anda ingin keluar (y/n) => "))
     if keluar == "y":
         time.sleep(2)
