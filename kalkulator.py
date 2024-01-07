@@ -2,15 +2,12 @@
 import sys
 import time
 
-# pengulangan untuk pemilihan operasi dan menu keluar
 x = "curut"
 while x == "curut":
+    print("=== MENU PILIHAN ===")
+    print("1. penambahan \n" "2. pengurangan \n" "3. perkalian \n" "4. pembagian")
     # pilihan operasi
-    operator = str(
-        input(
-            'Pilih operator "penambahan", "pengurangan", "perkalian", atau "pembagian" : '
-        )
-    )
+    operator = str(input("input => "))
     # pemilihan angka-angka
     number1 = int(input("Masukkan angka pertama: "))
     number2 = int(input("Masukkan angka kedua: "))
@@ -30,7 +27,7 @@ while x == "curut":
 
     # print hasil operasi
     print(f"{operator} dari {number1} dan {number2} adalah {res}")
-    # input pemelihan menu keluar
+    # input pemelihan user keluar
     keluar = str(input("apakah anda ingin keluar (y/n) => "))
     if keluar == "y":
         time.sleep(2)
